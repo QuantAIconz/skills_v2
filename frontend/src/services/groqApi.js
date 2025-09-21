@@ -36,7 +36,7 @@ export async function generateAssessmentWithAI(formData) {
     console.log("Sending request to backend:", formData);
     
     // const response = await fetch('http://localhost:5001/generate-assessment', {
-    const response = await fetch('https://skills-v2.onrender.com', {
+    const response = await fetch('https://skills-v2.onrender.com/generate-assessment', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ export async function generateAssessmentWithAI(formData) {
 export async function testBackendConnection() {
   try {
     // const response = await fetch('http://localhost:5001/health');
-    const response = await fetch('https://skills-v2.onrender.com');
+    const response = await fetch('https://skills-v2.onrender.com/health');
     if (response.ok) {
       const data = await response.json();
       console.log('Backend health check:', data);

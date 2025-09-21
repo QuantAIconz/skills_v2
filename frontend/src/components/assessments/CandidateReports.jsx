@@ -163,7 +163,7 @@ export default function CandidateReports({ assessment, submissions, onClose }) {
     setLoadingAnalysis(true);
     try {
       // const response = await fetch('http://localhost:5001/analyze-candidate', {
-      const response = await fetch('https://skills-v2.onrender.com', {
+      const response = await fetch('https://skills-v2.onrender.com/analyze-candidate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

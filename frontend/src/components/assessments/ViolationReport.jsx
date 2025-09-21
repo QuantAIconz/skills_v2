@@ -35,7 +35,7 @@ export default function ViolationReport({ assignmentId }) {
     
     try {
       // const response = await fetch('http://localhost:5001/generate-violation-report', {
-      const response = await fetch('https://skills-v2.onrender.com', {
+      const response = await fetch('https://skills-v2.onrender.com/generate-violation-report', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
