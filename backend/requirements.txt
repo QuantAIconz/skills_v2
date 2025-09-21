@@ -8,7 +8,6 @@ torch>=1.9.0
 # Email Services
 python-dotenv>=0.19.0
 sendgrid>=6.9.0
-smtplib3>=0.0.1
 
 # HTTP Requests & API
 requests>=2.26.0
@@ -17,6 +16,7 @@ aiohttp>=3.8.0
 # Web Framework
 flask>=2.0.0
 flask-cors>=3.0.10
+gunicorn==21.2.0
 
 # Groq AI
 groq>=0.3.0
