@@ -168,7 +168,7 @@ export default function InterviewerDashboard() {
   const sendAssessmentEmail = async (assessment, candidateEmail, type = 'assigned') => {
     try {
       // This would call your backend email service
-      const response = await fetch('http://localhost:5001/send-assessment-email', {
+      const response = await fetch('https://skills-v2-emailservice.onrender.com/send-assessment-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
